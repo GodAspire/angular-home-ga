@@ -85,6 +85,9 @@ nav + button.active span:nth-of-type(3) {
   width: 100%;
 }
 
+#mobileNav .mobileBackground {
+  width: 50vw;
+}
 
 @media only screen and (max-width: 780px) {
   nav {
