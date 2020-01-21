@@ -1,0 +1,69 @@
+header {
+  padding: 2rem;
+
+  top: 0;
+  left: 0;
+  position: sticky;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: 'Lobster', cursive;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 1.5rem;
+}
+
+nav + button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  flex-flow: column;
+  position: relative;
+}
+
+nav + button span {
+  width: 30px;
+  height: 4px;
+
+  display: block;
+  border-radius: 5px;
+
+  background-color: #000;
+  transition: all 300ms;
+}
+
+nav + button.active span {
+  /* transform: translateX(100px); */
+}
+
+nav + button span:not(:first-of-type){
+  margin-top: 0;
+}
+
+nav + button.active span:last-of-type {
+  transform: translateX(100px);
+}
+
+nav + button span:not(:first-of-type){
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 780px) {
+  nav {
+    display: none;
+  }
+
+  nav + button {
+    display: flex;
+  }
+}

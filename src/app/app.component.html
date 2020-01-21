@@ -1,0 +1,17 @@
+<header>
+  <h1>Name</h1>
+  <nav>
+    <a routerLink="home">home</a>
+    <a routerLink="work">work</a>
+    <a routerLink="about">about</a>
+  </nav>
+  <button (click)="mobileNavigation = !mobileNavigation" [ngClass]="{'active': mobileNavigation}">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<p>{{mobileNavigation}}</p>
+
+<router-outlet></router-outlet>
