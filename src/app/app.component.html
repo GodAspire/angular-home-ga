@@ -1,4 +1,4 @@
-<header>
+<header #headerElem>
   <h1>Name</h1>
   <nav>
     <a routerLink="home">home</a>
@@ -15,3 +15,12 @@
 <p>{{mobileNavigation}}</p>
 
 <router-outlet></router-outlet>
+
+<section id="mobileNav" [ngClass]="{'active': mobileNavigation}">
+  <div class="margin" [ngStyle]="{'height.px': headerOffset}"></div>
+  <div class="mobileBackground"></div>
+  <div class="mobileBackground"></div>
+  <div class="container">
+    <h1>Navigate</h1>
+  </div>
+</section>
