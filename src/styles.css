@@ -40,4 +40,32 @@ button::-moz-focus-inner {
 
 section.content {
   padding: 2rem;
+  color: #0e0e0e;
+
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.content:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+
+/* section.content media {
+  width: 280px
+} */
+
+section.content media img {
+  width: 280px
+}
+
+@media screen and (max-width: 780px) {
+
+  section.content {
+    flex-flow: column
+  }
+
 }
