@@ -12,20 +12,15 @@
   </button>
 </header>
 
-<p>{{mobileNavigation}}</p>
-
 <router-outlet></router-outlet>
 
 <section id="mobileNav" [ngClass]="{'active': mobileNavigation}">
   <div class="container">
     <div class="background"></div>
     <div class="link-container">
-      <a routerLink="imac"><span>iMac</span></a>
-      <a routerLink="iphone"><span>iPhone</span></a>
-      <a routerLink="ipad"><span>iPad</span></a>
-      <a routerLink="watch"><span>Watch</span></a>
-      <a routerLink="tv"><span>TV</span></a>
-      <a routerLink="support"><span>Support</span></a>
+      <a routerLink="imac"><span>home</span></a>
+      <a routerLink="iphone"><span>work</span></a>
+      <a routerLink="ipad"><span>about</span></a>
     </div>
   </div>
 </section>

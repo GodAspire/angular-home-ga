@@ -37,3 +37,7 @@ button {
 button::-moz-focus-inner {
   border: 0;
 }
+
+section.content {
+  padding: 2rem;
+}
